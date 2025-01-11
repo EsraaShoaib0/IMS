@@ -1,0 +1,113 @@
+/* General Body Styling for Add Item Page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F1F9F9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for Centering the Form */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Card Design for Add Item Form */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading Styling */
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Label Styling */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Input Field Styling */
+input.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* Add Item Button Styling */
+button.add-item {
+    padding: 14px 20px;
+    background-color: #040323;
+    color: #F1F9F9;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover Effect */
+button.add-item:hover {
+    background-color: #2c3d6b;
+    transform: translateY(-2px);
+}
+button.back:hover {
+    background-color: #f98a79;
+    transform: translateY(-2px);
+}
+button.back {
+	margin : 14px;
+    padding: 14px 20px;
+    background-color: #f02f11;
+    color: #F1F9F9;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 75%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect for Input Fields */
+input.form-control:hover {
+    border-color: #040323;
+}
+
+/* Error Message Styling (for form validation errors) */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}

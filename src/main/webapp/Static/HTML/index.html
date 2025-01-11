@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Table</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+    <h1>Interactive Item List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Amount</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Item 1</td>
+                <td>101</td>
+                <td>50</td>
+                <td class="action-buttons">
+                    <button>Update</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Item 2</td>
+                <td>102</td>
+                <td>100</td>
+                <td class="action-buttons">
+                    <button>Update</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Item 3</td>
+                <td>103</td>
+                <td>75</td>
+                <td class="action-buttons">
+                    <button>Update</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button class="add-item" onclick="addItem()">Add Item</button>
+
+    <script>
+        function addItem() {
+            alert('Add item functionality not implemented yet!');
+        }
+    </script>
+
+</body>
+</html>
