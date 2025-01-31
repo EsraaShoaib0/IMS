@@ -5,6 +5,20 @@ public class Item {
 	private String name;
 	private double price;
 	private int total_number;
+	ItemDetails itemDetails = new ItemDetails();
+	
+	/**
+	 * @return the itemDetails
+	 */
+	public ItemDetails getItemDetails() {
+		return itemDetails;
+	}
+	/**
+	 * @param itemDetails the itemDetails to set
+	 */
+	public void setItemDetails(ItemDetails itemDetails) {
+		this.itemDetails = itemDetails;
+	}
 	/**
 	 * @return the id
 	 */

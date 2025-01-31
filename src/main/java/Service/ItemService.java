@@ -8,7 +8,7 @@ public interface ItemService {
 	public List<Item> getAllItem();
 	void saveItem(Item item);
 	Item findItemByID(int id);
-	void updateIte(Item item);
+	void updateItem(Item item);
 	void deleteItem (int id);
 
 }

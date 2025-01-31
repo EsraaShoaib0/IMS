@@ -96,7 +96,7 @@ public class ItemController extends HttpServlet {
             updatedItem.setPrice(price);
             updatedItem.setTotal_number(totalNumber);
 
-            itemService.updateIte(updatedItem);
+            itemService.updateItem(updatedItem);
 
             response.sendRedirect("ItemController?action=LOAD_ITEMS");
         } catch (NumberFormatException e) {

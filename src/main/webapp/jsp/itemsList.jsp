@@ -21,7 +21,7 @@
         <thead>
             <tr>
                 <th>Name</th>
-                <th>ID</th>
+                <th>Price</th>
                 <th>Amount</th>
                 <th>Action</th>
             </tr>
@@ -30,7 +30,7 @@
             <c:forEach var="item" items="${itemsData}">
                 <tr>
                     <td>${item.name}</td>
-                    <td>${item.id}</td>
+                    <td>${item.price}</td>
                     <td>${item.total_number}</td>
                     <td class="action-buttons">
                         <a href="ItemController?action=LOAD_ITEM&id=${item.id}">
@@ -39,6 +39,20 @@
                         <a href="ItemController?action=DELETE&id=${item.id}" onclick="return confirm('Are you sure you want to delete this item?');">
                             <button class="delete-btn">Delete</button>
                         </a>
+
+                        <!-- Add or View Details Button -->
+                        <c:choose>
+                            <c:when test="${item.itemDetails ne null}">
+                                <a href="ItemDetailsController?action=VIEW_DETAILS&id=${item.id}">
+                                    <button class="view-details-btn">View Details</button>
+                                </a>
+                            </c:when>
+                            <c:otherwise>
+                                <a href="ItemDetailsController?action=ADD_DETAILS&id=${item.id}">
+                                    <button class="add-details-btn">Add Details</button>
+                                </a>
+                            </c:otherwise>
+                        </c:choose>
                     </td>
                 </tr>
             </c:forEach>
@@ -46,8 +60,8 @@
     </table>
 
     <a href="jsp/addItem.jsp">
-                            <button class="add-item">Add Item</button>
-                        </a>
+        <button class="add-item">Add Item</button>
+    </a>
 
     <script>
         function addItem() {
